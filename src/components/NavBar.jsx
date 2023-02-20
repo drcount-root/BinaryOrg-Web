@@ -3,10 +3,15 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Projects", href: "#", current: false },
-  { name: "About", href: "#", current: false },
-  { name: "GitHub", href: "#", current: false },
+  { name: "Home", href: "/", target: 0, current: true },
+  { name: "Projects", href: "/projects", target: 0, current: false },
+  { name: "About", href: "/about", target: 0, current: false },
+  {
+    name: "GitHub",
+    href: "https://github.com/BinaryOrg",
+    target: "_blank",
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
@@ -39,6 +44,7 @@ export default function NavBar() {
                       <a
                         key={item.name}
                         href={item.href}
+                        target={item.target ? "_blank" : ""}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
