@@ -9,7 +9,7 @@ export default function App() {
 
       {/* <h2 className="text-center mt-32 w-[100%] ">Tailwind CSS Added</h2> */}
 
-      <div>
+      <div className="lg:m-6 lg:my-24 my-20">
         <Grids />
       </div>
     </Fragment>

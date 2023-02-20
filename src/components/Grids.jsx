@@ -8,7 +8,7 @@ export default function Grids() {
       <div className="m-3 p-2 rounded-md grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {nums.map((num) => (
           <div
-            className="bg-white text-center rounded-md p-24 border-t-2 border-slate-700"
+            className="bg-white text-center rounded-md p-24"
             key={num}
             style={{
               boxShadow:
